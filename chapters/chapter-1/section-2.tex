@@ -1,0 +1,41 @@
+\section{Work and path integrals}
+\begin{definition}
+	\label{definition-1.1}
+	The \textbf{work} done by the constant force $\textbf{F}=\left(P,Q\right)$ in displacing an object along the segment $\Delta x=\left(\Delta x,\Delta y\right)$ is
+	\begin{equation*}
+	W=\textbf{F}\cdot\Delta x=P\Delta x+Q\Delta y=W_x+W_y.
+	\end{equation*}
+\end{definition}
+
+\begin{definition}
+	\label{definition-1.2}
+	A \textbf{smooth, simple, oriented curve $\overrightarrow{C}$} in $\mathbb{R}^n$ is the image of a smooth $1$--$1$ map,
+	\begin{equation*}
+	\textbf{x}~:~\left[a,b\right]\to\mathbb{R}^n~:~t\mapsto\textbf{x}\left(t\right),
+	\end{equation*}
+	where $\textbf{x}^\prime\left(t\right)\neq0$ for all $a<t<b$. The point $\textbf{x}\left(a\right)$ is the \textbf{start} of $\overrightarrow{C}$ and $\textbf{x}\left(b\right)$ is its \textbf{end}.
+\end{definition}
+
+\begin{definition}[Smooth path integral]
+	\label{definition-1.3}
+	\begin{equation*}
+	\int_{\overrightarrow{C}}\textbf{F}\cdot d\textbf{x}=\lim\limits_{\underset{\text{mesh}\to 0}{k\to\infty}} \sum_{i=1}^{k} \textbf{F}\left(\textbf{x}_i\right)\cdot\Delta\textbf{x}_i,
+	\end{equation*}
+	if the limit exists when taken over all ordered partitions $\textbf{x}_1,\textbf{x}_2,\ldots,\textbf{x}_{k+1}$ of $\overrightarrow{C}$ with $\textbf{mesh}=\max_i \left|\left|\Delta\textbf{x}_i\right|\right|$ and $\Delta\textbf{x}_i=\textbf{x}_{i+1}-\textbf{x}_i$, $i=1,\ldots,k$.
+\end{definition}
+
+\begin{definition}
+	\label{definition-1.4}
+	The \textbf{work} done by the force $\textbf{F}$ along the smooth oriented path $\overrightarrow{C}$ is
+	\begin{equation}
+	W=\int_{\overrightarrow{C}}\textbf{F}\cdot\Delta\textbf{x}.
+	\end{equation}
+\end{definition}
+
+\begin{theorem}
+	\label{theorem-1.1}
+	Suppose $\overrightarrow{C}$ is a smooth, simple, oriented curve in $\mathbb{R}^n$ that is parametrized by $\textbf{x}\left(t\right)$, $a\leq t\leq b$. If $\textbf{F}\left(\textbf{x}\right)$ is a continuous vector function defined on $\overrightarrow{C}$, then the integral of $\textbf{F}$ over the path $\overrightarrow{C}$ exists, and
+	\begin{equation}
+	\int_{\overrightarrow{C}}\textbf{F}\cdot\Delta\textbf{x}=\int_a^b\textbf{F}\left(\textbf{x}\left(t\right)\right)\cdot\textbf{x}^\prime\left(t\right) dt.
+	\end{equation}
+\end{theorem}

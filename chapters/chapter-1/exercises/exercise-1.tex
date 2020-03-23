@@ -1,0 +1,16 @@
+\begin{exercise}
+	Evaluate ${\displaystyle\int_0^{\infty}\frac{dx}{1+x^2}}$ and ${\displaystyle\int_{-\infty}^{1}\frac{dx}{1+x^2}}$.
+\end{exercise}
+\begin{solution}[1]
+	Let $x = \tan u$.
+	\begin{align*}
+	x &= \tan u \\
+	&= \frac{\sin u}{\cos u}
+	\end{align*}
+	We differentiate $x$ to find the trigonometric substitution factor.
+	\begin{align*}
+	\frac{d}{du}\left(x\right)&=\frac{f^{\prime}(u)g(u)-g^{\prime}(u)f(u)}{\left[g(u)\right]^2}\\
+	\frac{dx}{du}&=\frac{\left[\left(\sin\left(u\right)^{\prime}\right)\cdot\left(\cos u\right)\right]-\left[\left(\cos\left(u\right)^{\prime}\right)\cdot\left(\sin u\right)\right]}{\left[\cos\left(u\right)\right]^2}\\
+	&=\left[\cos u \cdot \cos u\right]-\left[-\sin u \cdot \sin u\right]
+	\end{align*}
+\end{solution}
